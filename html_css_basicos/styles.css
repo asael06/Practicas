@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: lightslategray;
+}
+
+#header {
+  border: 1px solid lightslategray;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header-container > div {
+  display: flex;
+}
+
+.magico {
+  width: 40px;
+  height: 40px;
+}
+
+#main-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.main-section-title {
+  padding: 10px;
+  border: 1px solid lightslategray;
+}
+
+.article {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightslategray;
+  justify-content: space-between;
+}
+
+.article .article-days {
+  display: flex;
+  align-items: center;
+}
+
+.article:first-child {
+  border-top: none;
+}
+
+.article + .article {
+  border-top: 0;
+}
+
+.article-info {
+  display: flex;
+}
+
+.article-info > img + * {
+  margin-left: 10px;
+}
+
+.article button {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+
+#header + * {
+  margin-top: 20px;
+}
+
+.articles-container + .publication-container {
+  margin-top: 20px;
+}
+
+.publication-container {
+  border: 1px solid lightslategray;
+}
+
+.publication-container > .article {
+  border: none;
+  border-bottom: 1px solid lightslategray;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container > img {
+  width: 100%;
+}
+
+.commentary-box {
+  padding: 10px;
+}
+
+.commentary {
+  border-bottom: 1px solid lightslategray;
+  padding-bottom: 10px;
+}
+
+.commentary span {
+  font-weight: 800;
+}
+
+.commentary-input-container {
+  display: flex;
+  padding: 10px;
+}
+
+.commentary-input-container button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.commentary-input-container button {
+  cursor: pointer;
+}
+
+.commentary-input-container button img {
+  width: 100%;
+}
+
+.commentary-input-container button + .input-container {
+  margin-left: 15px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 60px);
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.commentary-input-container + .commentary-input-container {
+  margin-top: 20px;
+}
+
+.publication-container + .publication-container {
+  margin-top: 20px;
+}
