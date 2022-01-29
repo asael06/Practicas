@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox {
+  background-color: pink;
+  /*
+    position:
+      static: default
+      relative: no pierde su espacio en el DOM
+      absolute: si pierde su espacio en el DOM
+      fixed: si pierde su espacio en el DOM y se queda fijo
+      sticky (experimental)
+  */
+}
+
+
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox label {
+  display: block;
+  position: relative;
+}
+
+.custom-checkbox label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+}
+
+.custom-checkbox input:checked + label::before {
+  background-color: blue;
+}

@@ -1,0 +1,93 @@
+* {
+  
+ 
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*selector de etiqueta*/
+body {
+  background-color: red;
+}
+
+/*selector de clase*/
+.container {
+  background-color: green;
+}
+
+/*selector de id*/
+#p1 {
+  background-color: greenyellow;
+}
+
+/*pseudo clase*/
+input {
+  background-color: crimson;
+}
+
+/*selector descendiente*/
+.container p {
+  color: yellow;
+}
+
+/*selector hijo directo*/
+.container > p {
+  color: black;
+}
+
+/*selector hermano adyacente*/
+.container p + p {
+  margin-top: 15px;
+}
+
+/*selector hermanos adyacentes */
+.container p ~ div {
+  background-color: blue;
+}
+
+/*selector de attributo
+  comodines ^ empieza con
+            * contiene
+            $ termina en
+*/
+input[name$="t1"] {
+  background-color: blueviolet;
+}
+
+/*
+Selectore hijos
+
+:first-child
+:last-child
+:nth-child()
+*/
+
+.container p:first-child {
+  height: 30px;
+}
+
+.container p:last-child {
+  height: 50px;
+}
+
+.container p:nth-child(even) {
+  background-color: red;
+}
+
+.container > p:last-of-type {
+  background-color: cornflowerblue;
+}
+
+/*
+  pseudo elementos
+  ::before
+  ::after
+*/
+
+h2::before {
+  content: "";
+}
+
+h2::after {
+  content: " grooth";
+}

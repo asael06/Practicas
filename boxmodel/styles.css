@@ -1,0 +1,87 @@
+@import "global-styles.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* div {
+  margin y sus shorthands
+  margin: 5px 10px 15px 20px;
+  margin: 5px 10px 20px;
+  margin: 5px 10px;
+
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+} */
+
+body {
+  height: 100vh;
+  padding: 20px;
+}
+
+.div1 {
+  /*box-sizing: padding-box*/
+  background-color: red;
+  height: 100vh;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+}
+
+.div1 div {
+  
+  height: 20px;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: var(--translate);
+  z-index: var(--main-z-index);
+}
+
+.element {
+  z-index: var(--second-z-index);
+}
+
+.div1 .blue {
+  background-color: green;
+  height: 150px;
+  position: static;
+  z-index: var(--third-z-index);
+}
+
+/*
+  Position:
+    static: ocupa su espacio dentro del DOM
+    relative: ocupa su espacio dentro del DOM y además funciona como referencia
+    absolute: pierde su espacio dentro del DOM y busca al elemento padre con un 
+              position diferente al static y lo toma como referencia
+    fixed: pierde su espacio dentro del DOM pero siempre toma como referencia al body
+    sticky: pierde su espacio dentro del DOM toma referncia su padre mas cercano que 
+            tenga un position diferente al static.
+
+   top:
+   left:
+   rigth:
+   bottom:
+*/
+
+.element {
+  background-color: green !important;
+}
+
+ul li {
+  background-color: red !important;
+}
+
+li:last-child {
+  background-color: blue !important;
+}
+
+li {
+  background-color: yellow !important;
+}

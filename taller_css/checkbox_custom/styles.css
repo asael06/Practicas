@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+input {
+  display: none;
+}
+
+/*
+  position:
+    static
+    relative no pierde su espacio en el DOM
+    absolute  si pierde su espacio en el DOM
+    fixed
+    sticky
+
+    top
+    left
+    right
+    bottom
+*/
+
+div {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  position: relative;
+  width: 100px;
+}
+
+label::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+}
+
+input:checked + label::before {
+  background-image: url("https://thumbs.dreamstime.com/b/icono-del-checkbox-estilo-plano-s%C3%ADmbolo-dise%C3%B1o-web-simple-muestra-ejemplo-vector-129738535.jpg");
+  background-size: contain;
+}

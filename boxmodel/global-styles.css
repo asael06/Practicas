@@ -1,0 +1,8 @@
+:root {
+  --main-z-index: 1000;
+  --middle-z-index: 500;
+  --modal-z-index: 300;
+  --second-z-index: 100;
+  --third-z-index: 10;
+  --translate: translateX(-50%);
+}

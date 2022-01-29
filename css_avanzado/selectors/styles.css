@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: yellow;
+}
+
+body {
+  background-color: pink;
+}
+
+p,
+div {
+  background-color: transparent;
+}
+
+.element {
+  background-color: red;
+}
+
+.some {
+  background-color: blue;
+}
+
+p.else {
+  background-color: cadetblue;
+}
+
+#element1 {
+  background-color: violet;
+}
+
+body div{
+  padding: 20px;
+}
