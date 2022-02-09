@@ -1,0 +1,47 @@
+:root {
+  --height: 100vh;
+  --child-height: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  background-color: green;
+  width: 80%;
+  height: 100vh;
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  bottom: 50%;
+  border-left: 12px solid red;
+  transform: translateY(50%);
+}
+
+/*
+  position: 
+    - static: valor por defecto de todos los elementos
+              en el DOM.
+    - relative: conserva su espacio en el DOM.
+    - absolute: pierde su espacio en el DOM y toma como
+                referencia a su contenedor ascendiente con un position
+                diferente al static.
+    - fixed: pierde su espacio en el DOM y se salta todos
+             los contenedores ascendientes hasta el llegar
+             al body.
+    - sticky: combinación de absolute y fixed.
+*/
