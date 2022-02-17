@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: crimson;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse-container {
+  background-color: teal;
+  width: 100px;
+  height: 100px;
+  animation: pulse 2s ease-in infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(5);
+    background-color: aqua;
+  }
+  50% {
+    transform: scale(2);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: skew(45deg);
+    background-color: green;
+  }
+}
