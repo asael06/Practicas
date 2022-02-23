@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-color: teal;
   position: absolute;
   right: -100%;
-  transition: right linear 1s;
+  transition: right linear 0.5s;
 
   &.active {
     right: 0;
